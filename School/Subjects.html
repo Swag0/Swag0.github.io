@@ -1,0 +1,106 @@
+<html>
+<head><title>
+School
+</title></head>
+<body style="color:red">
+<div class="tabs">
+    
+<div class="tab">
+       <input type="radio" id="tab-1" name="tab-group-1" checked>
+       <label for="tab-1">Socials</label>
+       
+       <div class="content">
+            <red><p><h1>Food Security</h1></p><h3>On average americans waste about 165 billion dollars per year by wasting food. To imagine that 45 million people in the same country don't have enough food is RIDICULOUS! People don't have enough food because they don't have enough money for themselves and their family.  </h3></red>
+       </div> 
+   </div>
+
+    
+   <div class="tab">
+       <input type="radio" id="tab-2" name="tab-group-1">
+       <label for="tab-2">Science</label>
+       
+       <div class="content">
+          
+       </div> 
+   </div>
+    
+    <div class="tab">
+       <input type="radio" id="tab-3" name="tab-group-1">
+       <label for="tab-3">Math</label>
+     
+       <div class="content">
+      <red>Testing</red> 
+       </div> 
+    <div class="tab">
+       <input type="radio" id="tab-4" name="tab-group-1">
+       <label for="tab-4">English</label>
+     
+       <div class="content">
+       
+       </div> 
+       </div> 
+    <div class="tab">
+       <input type="radio" id="tab-5" name="tab-group-1">
+       <label for="tab-5">Band</label>
+     
+       <div class="content">
+       
+       </div> 
+    <div class="tab">
+       <input type="radio" id="tab-6" name="tab-group-1">
+       <label for="tab-6">French</label>
+     
+       <div class="content">
+       
+       </div> 
+
+ </div>
+
+<style>
+
+red{
+color:blue;
+}
+.tabs {
+  position: relative;   
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+color:red;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+</style>
+</body>
+</html>
